@@ -30,8 +30,12 @@
     }
 }
 
-.form {
+.label-wrapper {
+    @include flex;
+    padding: 20px 10px 0;
+}
 
+.form {
     &__label {
         @include flex;
         width: 100%;
@@ -51,7 +55,7 @@
     &__submit {
         display: block;
         margin: 0 auto;
-        margin-top: 41px;
+        margin-top: 14px;
         width: 180px;
         height: 48px;
         border: 2px solid $contact-us-color;
@@ -157,6 +161,14 @@
         @include _769 {
             width: 100%;
         }
+    }
+}
+
+.map {
+    &__frame {
+        width: 100%;
+        height: 100%;
+        border: none;
     }
 }
 
