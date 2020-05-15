@@ -1,0 +1,68 @@
+.services {
+    position: relative;
+    background: $light-mask;
+    height: 408px;
+
+    &::before {
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url('../../img/services-bg.png');
+    }
+
+    &__list {
+        @include flex;
+        padding-top: 151px;
+
+        @include _1024 {
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px; 
+        }
+    }
+
+    &__item {
+        padding-left: 97px;
+
+        @include _1024 {
+            margin-bottom: 20px;
+            width: 310px;
+        }
+
+        &--award {
+            background: url('../../img/award-icon.png');
+            background-repeat: no-repeat;
+            background-position: top left;
+        }
+
+        &--hygiene {
+            background: url('../../img/hygiene-icon.png');
+            background-repeat: no-repeat;
+            background-position: top left;
+        }
+
+        &--design {
+            background: url('../../img/design-icon.png');
+            background-repeat: no-repeat;
+            background-position: top left;
+        }
+    }
+
+    &__heading {
+        padding-top: 10px;
+        padding-bottom: 9px;
+    }
+
+    &__descr {
+        color: $bg-dark;
+        max-width: 170px;
+        padding-bottom: 4px;
+    }
+
+    &__more {
+        color: $red;
+    }
+}

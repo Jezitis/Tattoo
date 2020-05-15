@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    background-color: $bg-dark;
+    color: $text-white;
+    font-family: 'Railway', Sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: $text-white;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.site-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1176px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.grid {
+    display: grid;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+.contact-us {
+    text-align: left;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: $contact-us-color;
+    padding: 11px 26px;
+    border: 2px solid $contact-us-color;
+
+    &__plus {
+        font-size: 20px;
+    }
+}
+
+.section-title {
+    font-family: Playfair Display SC;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 61px;
+    line-height: 81px;
+    color: $light-gray;
+
+    @include _1160 {
+        font-size: 54px;
+    }
+
+    @include _769 {
+        font-size: 42px;
+    }
+
+    @include _540 {
+        font-size: 29px;
+    }
+}
+
+.heading {
+    font-family: Playfair Display SC;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: $text-white;
+
+    &--dark {
+        color: $bg-dark;
+    }
+
+    @include _540 {
+        font-size: 20px;
+    }
+}
+
+.subtitle {
+    font-family: Playfair Display SC;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;   
+    color: $white;
+}
+
+.more-link {
+    font-size: 16px;
+    line-height: 18px;
+    color: $text-white;
+    background-image: url('../../img/more.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding-right: 20px;
+}
+
+.socials {
+
+    &__item {
+        margin-bottom: 20px;
+
+        @include _769 {
+            margin-top: 20px;
+        }
+        
+        &--inline {
+            display: inline-block;
+            margin-right: 16px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &--fb {
+            background-image: url('../../img/fb.png');
+
+            &-medium {
+                background-image: url('../../img/fb-M.png');
+            }
+
+            &-small {
+                background-image: url('../../img/fb-S.png');
+                background-position: top right;
+            }
+        }
+
+        &--inst {
+            background-image: url('../../img/inst.png');
+
+            &-medium {
+                background-image: url('../../img/inst-M.png');
+            }
+
+            &-small {
+                background-image: url('../../img/inst-S.png');
+                background-position: top right;
+            }
+        }
+    }
+}
+
+.scroll-off {
+    overflow: hidden;
+}

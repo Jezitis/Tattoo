@@ -1,0 +1,29 @@
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin _1160 {
+    @media (max-width: 1160px){
+        @content;
+    }
+}
+
+@mixin _1024 {
+    @media (max-width: 1024px){
+        @content;
+    }
+}
+
+@mixin _769 {
+    @media (max-width: 769px){
+        @content;
+    }
+}
+
+@mixin _540 {
+    @media (max-width: 540px){
+        @content;
+    }
+}

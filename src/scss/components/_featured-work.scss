@@ -1,0 +1,115 @@
+.featured-work {
+    &__container {
+        padding-top: 80px;
+        padding-bottom: 179px;
+        @include flex;
+
+        @include _1024 {
+            flex-wrap: wrap;
+        }
+
+        @include _769 {
+            padding-top: 40px;
+            padding-bottom: 80px;
+        }
+
+        @include _540 {
+            padding-bottom: 40px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 24px;
+    }
+
+    &__heading {
+        padding-left: 3px;
+        margin-bottom: 48px;
+    }
+
+    &__gallery {
+        @include flex;
+
+        @include _1024 {
+            justify-content: space-around;
+        }
+
+        @include _540 {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__more {
+        position: absolute;
+        right: 0;
+        top: 10%;
+        margin-right: 4px;
+
+        @include _1024 {
+            right: 10%;
+            top: -100%;
+            margin-right: 0;
+        }
+
+        @include _769 {
+            top: unset;
+            right: 43%;
+            bottom: -10%;
+        }
+
+        @include _540 {
+            right: 33%;
+            bottom: -1%;
+        }
+    }
+}
+
+.gallery {
+    &__item {
+        margin-right: 31px;
+
+        @include _540 {
+            width: 100%;
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        width: 100%;
+    }
+
+    &__image {
+        width: 100%;
+    }
+}
+
+.wrapper {
+
+    @include _1024 {
+        width: 100%;
+    }
+
+    &__right {
+        position: relative;
+        padding-top: 105px;
+    
+        @include _1160 {
+            margin-left: 20px;
+        }
+
+        @include _1024 {
+            width: 100%;
+            margin-left: 0;
+            padding-top: 20px;
+        }
+
+        @include _540 {
+            padding-top: 0;
+        }
+    }
+}

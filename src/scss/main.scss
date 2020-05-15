@@ -1,0 +1,17 @@
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+@import 'base';
+
+@import 'components/header';
+@import 'components/artists';
+@import 'components/services';
+@import 'components/featured-work';
+@import 'components/about-us';
+@import 'components/collective-work';
+@import 'components/contacts';
+@import 'components/custom-select';
+@import 'components/footer';
+
+@import 'libs/jquery.formstyler';
+@import 'libs/lightbox';

@@ -1,0 +1,72 @@
+.artists {
+    &__container {
+        padding-top: 80px;
+        padding-bottom: 129px;
+
+        @include _769 {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 23px;
+    }
+
+    &__list {
+        @include flex;
+        @include _1024 {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        @include _540 {
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        @include _1160 {
+            margin-right: 20px;
+        }
+        @include _1024 {
+            width: 33%;
+        }
+
+        @include _540 {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__info {
+        @include flex;
+
+        @include _1024 {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        @include _540 {
+            flex-direction: row;
+            margin-top: 7px;
+        }
+    }
+
+    &__more {
+        align-self: flex-end;
+        padding-bottom: 3px;
+
+        @include _1024 {
+            align-self: initial;
+        }
+
+        @include _540 {
+            margin-top: 10px;
+        }
+    }
+}
