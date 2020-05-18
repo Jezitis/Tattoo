@@ -23,6 +23,7 @@
     "gulp-uglify": "^3.0.2"
   },
   "dependencies": {
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "kind-of": "^6.0.3"
   }
 }
